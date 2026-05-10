@@ -1,7 +1,5 @@
 # 🧠 Five Types of Agentic AI Memory — Implementation Guide
 
-## TCS Research Internship: Optimizing Memory for Agentic AI Applications
-
 This project implements all **five types of memory** used in Agentic AI systems,
 inspired by cognitive science and adapted for LLM-powered agents.
 
@@ -54,7 +52,7 @@ pip install -r requirements.txt
 python demo.py
 ```
 
-## Key Concepts for Your Internship
+## Key Concepts
 
 1. **Context Window is the bottleneck** — everything the agent knows must fit in it
 2. **Memory ≠ storing everything** — it's about *what* to store and *when* to retrieve
