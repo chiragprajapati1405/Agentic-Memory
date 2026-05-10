@@ -1,11 +1,11 @@
-# 🧠 Five Types of Agentic AI Memory — Implementation Guide
+# 🧠 Six Types of Agentic AI Memory — Implementation Guide
 
-This project implements all **five types of memory** used in Agentic AI systems,
+This project implements all **six types of memory** used in Agentic AI systems,
 inspired by cognitive science and adapted for LLM-powered agents.
 
 ---
 
-## The Five Memory Types
+## The Six Memory Types
 
 | # | Memory Type | Analogy | What It Stores | Lifespan |
 |---|------------|---------|----------------|----------|
@@ -14,8 +14,9 @@ inspired by cognitive science and adapted for LLM-powered agents.
 | 3 | **Working Memory** | Scratchpad | Mid-task reasoning state | Single task |
 | 4 | **Episodic Memory** | Diary | Past experiences with timestamps | Persistent |
 | 5 | **Semantic Memory** | Encyclopedia | Facts, knowledge, relationships | Persistent |
+| 6 | **Procedural Memory** | Muscle memory | How-to steps, workflows, skills | Persistent |
 
-## Why These Five?
+## Why These Six?
 
 The LLM at the core of any agent is **stateless** — every inference call starts fresh.
 Memory is NOT a model problem; it's an **infrastructure problem**. You build memory
@@ -27,6 +28,7 @@ Different situations need different information:
 - Current task's intermediate steps → **Working Memory**
 - "Last time we tried X and it failed" → **Episodic Memory**
 - "Python is a programming language" → **Semantic Memory**
+- "How to send an email via API" → **Procedural Memory**
 
 ## Project Structure
 
@@ -40,8 +42,9 @@ agentic_memory/
 │   ├── long_term_memory.py      # Type 2: Persistent cross-session store
 │   ├── working_memory.py        # Type 3: Task scratchpad
 │   ├── episodic_memory.py       # Type 4: Experience diary
-│   └── semantic_memory.py       # Type 5: Knowledge & facts (vector-based)
-├── unified_agent.py             # Agent combining all 5 memory types
+│   ├── semantic_memory.py       # Type 5: Knowledge & facts (vector-based)
+│   └── procedural_memory.py     # Type 6: Workflows & how-to skills
+├── unified_agent.py             # Agent combining all 6 memory types
 └── demo.py                      # Interactive demo
 ```
 
