@@ -90,7 +90,7 @@ def demo_2_long_term_memory():
     memories = [
         ("language", "Python", "preference", 0.9),
         ("framework", "FastAPI", "preference", 0.8),
-        ("project", "Agentic memory optimization at TCS", "fact", 0.95),
+        ("project", "Agentic memory optimization for AI agents", "fact", 0.95),
         ("style", "Prefers concise code with comments", "preference", 0.85),
         ("db", "Uses PostgreSQL for structured data", "preference", 0.7),
     ]
@@ -303,7 +303,7 @@ def demo_unified():
     # Seed knowledge
     agent.sm.add_knowledge("Python is excellent for prototyping", "domain")
     agent.sm.add_knowledge("Always run tests before deployment", "domain")
-    agent.ltm.store("org", "TCS Research", "fact", 0.9)
+    agent.ltm.store("org", "Personal AI Research", "fact", 0.9)
 
     messages = [
         "Hi! I prefer Python for backend development.",
@@ -330,10 +330,10 @@ def main():
     print("""
     ╔══════════════════════════════════════════════════════════════╗
     ║                                                              ║
-    ║   🧠 FIVE TYPES OF AGENTIC AI MEMORY                        ║
-    ║      Implementation Guide for TCS Research Internship        ║
+    ║   🧠 SIX TYPES OF AGENTIC AI MEMORY                         ║
+    ║      Implementation Guide for Agentic AI Applications        ║
     ║                                                              ║
-    ║   Project: Optimizing Memory for Agentic AI Applications     ║
+    ║   Project: Optimizing Memory for Agentic AI Systems          ║
     ║                                                              ║
     ╠══════════════════════════════════════════════════════════════╣
     ║                                                              ║
@@ -362,7 +362,7 @@ def main():
         choice = input("\n  Select demo (1-7, 0 to exit): ").strip()
 
         if choice == "0":
-            print("\n  👋 Happy coding! Good luck with your internship!")
+            print("\n  👋 Happy coding!")
             break
         elif choice == "7":
             for demo_fn in demos.values():
